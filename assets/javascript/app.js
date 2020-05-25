@@ -1,5 +1,5 @@
 function newQuote() {
-    $.getJSON("./wager.json", function(result){
+    $.getJSON("https://raw.githubusercontent.com/NotThatJonas/EveningWager/master/assets/javascript/wagers.json", function(result){
         let randomQuote = 0;
         randomQuote = Math.random() * (result.length - 0) + 0;
         randomQuote = randomQuote.toFixed(0);
